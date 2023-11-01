@@ -1,4 +1,4 @@
-# 1a¹ø
+# 1aë²ˆ
 gaussianelimination = function(A,b){
   n = nrow(A)
   for (k in (1:(n-1))){
@@ -65,8 +65,8 @@ gaussianelimination(A,b)
 b= matrix(c(10,15,-5), byrow = F, ncol = 1)
 backwardsub(gaussianelimination(A,b),b)
 
-#1b¹ø
-# LU ºÐÇØ 
+#1bë²ˆ
+# LU ë¶„í•´ 
 lufactorization = function(A){
   n = nrow(A)
   L = matrix(0,nrow=n,ncol=n)
@@ -95,7 +95,7 @@ y
 x=Solve(U,y)
 x
 
-#2¹ø
+#2ë²ˆ
 library(limSolve)
 gaussianelimination2 = function(Ab,b){
   n = nrow(Ab)
@@ -147,6 +147,4 @@ for (i in 2:10){
 }
 print(norm)
 
-plot(2:10,norm,type='b',xlab='n',ylab='||xn - x0||',main='norm ±×·¡ÇÁ')
-
-
+plot(2:10,norm,type='b',xlab='n',ylab='||xn - x0||',main='norm ê·¸ëž˜í”„')
